@@ -14,14 +14,14 @@ Track One.
 
   .. code:: bash
 
-  	    scripts/checkpatch.pl --terse --strict --show-types drivers/staging/FOO/*.{ch}
+     scripts/checkpatch.pl --terse --strict --show-types drivers/staging/FOO/*.{ch}
 
   If you'd like something more challenging you may like to try `Sparse` errors.
 
   .. code:: bash
 
-            make C=2 M=drivers/staging/FOO
-          
+     make C=2 M=drivers/staging/FOO
+            
 - Pick three warnings that you feel you can fix. You should be sure to understand fully the code
   changes you are making. Don't bother with 'line over 80' warnings. If you are going to do
   white space fixes be sure to get it correct, look at other code and rerun checkpatch on your
