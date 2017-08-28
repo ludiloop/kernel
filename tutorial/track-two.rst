@@ -59,13 +59,13 @@ Track One.
 
   .. code:: bash
 
-  	    git format-patch -3 -o path/to/patch/dir --cover-letter
+     git format-patch -3 -o path/to/patch/dir --cover-letter
 
 - Ascertain the recipients of your patch set (check the TODO within the driver if present)
 
   .. code:: bash
 
-	    scripts/get_maintainer.pl path/to/patch/dir/*.patch  
+     scripts/get_maintainer.pl path/to/patch/dir/*.patch  
 
 - Write the cover letter. This can be anything from an exhaustive explanation of what the series
   does to a brief few line sentence. For a simple series like this, you may like to lean towards the
@@ -75,14 +75,14 @@ Track One.
 
   .. code:: bash
 
-	    git send-email --to='me@gmail.com' path/to/patch/dir/*.patch
+     git send-email --to='me@gmail.com' path/to/patch/dir/*.patch
 
 - Submit the series for real. If you add the `To:` and `Cc:` headers to the cover letter then
   the following command does what you need
 
   .. code:: bash
 
-  	    git send-email --to-cover --cc-cover path/to/patch/dir/*.patch
+     git send-email --to-cover --cc-cover path/to/patch/dir/*.patch
 
             
 **Profit!**
