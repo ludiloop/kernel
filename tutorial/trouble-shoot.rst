@@ -40,15 +40,15 @@ Kernel Build Errors
         
 - If you want to start the build process fresh
 
-2. Run `make mrproper` (this removes .config)
-3. Create .config (either from a backup or from a running config)
-4. Run `make yes "" | make oldconfig`
-5. Run `make`
+  1. Run `make mrproper` (this removes .config)
+  2. Create .config (either from a backup or from a running config)
+  3. Run `make yes "" | make oldconfig`
+  4. Run `make`
 
 Git
 ---
 
 - If you get an error when using `git send-email` you may need to install the `git-email` package. See
 
-    https://burzalodowa.wordpress.com/2013/10/05/how-to-send-patches-with-git-send-email/
+  https://burzalodowa.wordpress.com/2013/10/05/how-to-send-patches-with-git-send-email/
 
