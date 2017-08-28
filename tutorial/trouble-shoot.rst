@@ -6,16 +6,16 @@ Kernel Build Errors
 
 - If you get build errors referring to ssl, you may need to install the ssl development library.
 
-    On Ubuntu: libssl-dev
+  On Ubuntu: libssl-dev
 
 - On Debian based distro's, if you get a build error containing
 
-    needed by 'certs/x509_certificate_list'
+  needed by 'certs/x509_certificate_list'
 
   You may need to set your config to
 
-    CONFIG_SYSTEM_TRUSTED_KEYRING=n
-    # CONFIG_SYSTEM_TRUSTED_KEYS=""
+  CONFIG_SYSTEM_TRUSTED_KEYRING=n
+  # CONFIG_SYSTEM_TRUSTED_KEYS=""
 
 - Make error
 
