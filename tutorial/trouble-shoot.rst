@@ -6,26 +6,35 @@ Kernel Build Errors
 
 - If you get build errors referring to ssl, you may need to install the ssl development library.
 
+  .. code:: bash
+
 	libssl-dev
 
 - On Debian based distro's, if you get a build error containing
 
-   needed by 'certs/x509_certificate_list'
+  .. code:: bash
+
+	needed by 'certs/x509_certificate_list'
 
   You may need to set your config to
 
-   CONFIG_SYSTEM_TRUSTED_KEYRING=n
-   # CONFIG_SYSTEM_TRUSTED_KEYS=""
+  .. code:: bash
+
+   	CONFIG_SYSTEM_TRUSTED_KEYRING=n
+        # CONFIG_SYSTEM_TRUSTED_KEYS=""
 
 - Make error
 
-	make[2]: *** [silentoldconfig] Error 1
+  .. code:: bash
+
+  	make[2]: *** [silentoldconfig] Error 1
         make[1]: *** [silentoldconfig] Error 2
         make: *** No rule to make target 'include/config/auto.conf', needed by 'include/config/kernel.release'.  Stop.
         make: *** Waiting for unfinished jobs....
 
-
   Can be resolved by running
+
+  .. code:: bash
 
 	yes "" | make oldconfig
         
