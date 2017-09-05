@@ -14,13 +14,13 @@ Tips after working through track two.
 
 - grepfoo 
 
-  .. code: bash
+  .. code:: bash
       
      cat ~/scratch/checkpatch.out | grep WARNING | grep -v 'line over 80' 
  
 - Don't do band aid fixes. Fix the root of the problem.
 
-  .. code: bash
+  .. code:: bash
      
      pci.c:1574: CHECK:PARENTHESIS_ALIGNMENT: Alignment should match open parenthesis
   
@@ -29,13 +29,13 @@ Tips after working through track two.
 
 - Feel free to mildly violate line over 80 if it makes the code more readable.
 
-  .. code: bash
+  .. code:: bash
      
      efuse.c:255: WARNING:ALLOC_WITH_MULTIPLY: Prefer kcalloc over kzalloc with multiply
      efuse.c:259: WARNING:ALLOC_WITH_MULTIPLY: Prefer kcalloc over kzalloc with multiply
 
 
-  .. code: bash   
+  .. code:: bash   
 
      for (i = 0; i < EFUSE_MAX_WORD_UNIT; i++) {
              efuse_word[i] = kcalloc(efuse_max_section, sizeof(u16), GFP_ATOMIC);
