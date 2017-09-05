@@ -68,7 +68,7 @@ apply () {
     # check we are in a git repo
     ensure ls '.git' > /dev/null
 
-    # apply each patches
+    # apply each patche
     for file in $(ls $patch_dir)
     do
         # check file is not a cover letter
