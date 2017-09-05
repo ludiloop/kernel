@@ -2,7 +2,7 @@
 Tips
 ====
 
-* Work in pairs!
+- Work in pairs!
 
 
 rtlwifi
@@ -10,15 +10,15 @@ rtlwifi
 
 Tips after working through track two.
 
-* Save the output of checkpatch so you don't have to wait for it to run repeatedly.
+- Save the output of checkpatch so you don't have to wait for it to run repeatedly.
 
-* grepfoo 
+- grepfoo 
 
   .. code: bash
       
      cat ~/scratch/checkpatch.out | grep WARNING | grep -v 'line over 80' 
  
-* Don't do band aid fixes. Fix the root of the problem.
+- Don't do band aid fixes. Fix the root of the problem.
 
   .. code: bash
      
@@ -27,7 +27,7 @@ Tips after working through track two.
   The root problem is that the code is indented too heavily. Function needs refactoring not
   alignment fixing.
 
-* Feel free to mildly violate line over 80 if it makes the code more readable.
+- Feel free to mildly violate line over 80 if it makes the code more readable.
 
   .. code: bash
      
@@ -43,7 +43,7 @@ Tips after working through track two.
                      goto done;
      }
 
-* Look up kernel identifiers at free-electrons_
+- Look up kernel identifiers at free-electrons_
 
 .. _free-electrons: http://elixir.free-electrons.com/linux/latest/ident
 
