@@ -52,14 +52,14 @@ Track One.
 
   	    git rebase -i HEAD~~~
 
-- Verify your patches **all** apply and build cleanly on top of the `staging-next` branch. You can do
-  this manually, you can hack a quick shell script to do it, or you can use `../apply-and-build.sh`.
-
 - Output a correctly linked patch set ready for submission
 
   .. code:: bash
 
      git format-patch -3 -o path/to/patch/dir --cover-letter
+
+- Verify your patches **all** apply and build cleanly on top of the `staging-next` branch. You can do
+  this manually, you can hack a quick shell script to do it, or you can use `../apply-and-build.sh`.
 
 - Ascertain the recipients of your patch set (check the TODO within the driver if present)
 
